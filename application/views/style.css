@@ -1,0 +1,81 @@
+body {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.col-md-3 {
+    background-color: #c40018;
+    border-right: 6px solid;
+}
+
+.aop {
+    margin-top: 20%;
+    text-align: left;
+    font-size: 55px;
+    margin-bottom: 87%;
+}
+
+.signin {
+    margin-left: 80%;
+    margin-top: -8%;
+}
+
+.signup {
+    margin-left: -5px;
+    margin-top: -8%;
+}
+
+.mail {
+    font-size: 20px;
+    margin-top: 15%;
+    margin-left: 25%;
+}
+
+#email {
+    margin-left: 35px;
+    width: 300px;
+}
+
+#password {
+    width: 300px;
+}
+
+.pw {
+    font-size: 20px;
+    margin-left: 25%;
+}
+
+.submit {
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
+.megaphone {
+    margin-left: 85%;
+    margin-top: 10%;
+    width: 150px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.garisvertikal {
+    margin-top: 6%;
+    border-bottom: 4px solid;
+}
+
+.aspiration {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 12%;
+}
+
+.of {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 52%;
+}
+
+.people {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 40%;
+
+}

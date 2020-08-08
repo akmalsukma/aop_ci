@@ -1,0 +1,58 @@
+body{
+    background-image: url("ana-flavia-kR5VQr3-L9w-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 1380px 760px;
+    overflow: hidden;
+}
+
+.society{
+    color: #292725;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.for{
+    color: #292725;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#community{
+    color: #292725;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.change{
+    background-color: #292725;
+    border: none;
+    color: white;
+     text-align: center;
+    text-decoration: none;
+     height: 50px;
+    width: 200px;
+    margin-top: 120%;
+    margin-left: -32%;
+}
+.change:hover {
+    background-color: #e9290f
+}
+.change:active{
+    background-color: #e9290f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.login{
+    background-color: #292725;
+    border: none;
+    color: white;
+    text-decoration: none;
+     height: 35px;
+    width: 100px;
+    margin-top: 5%;
+    margin-left: 60%;
+}
+
+.login:hover {
+    background-color: #ff6107
+}

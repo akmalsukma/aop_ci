@@ -1,0 +1,95 @@
+body {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.col-md-3 {
+    background-color: #c40018;
+    border-right: 6px solid;
+}
+
+.aop {
+    margin-top: 20%;
+    text-align: left;
+    font-size: 55px;
+    margin-bottom: 87%;
+}
+
+.signin {
+    margin-left: 80%;
+    margin-top: -8%;
+}
+
+.signup {
+    margin-left: -5px;
+    margin-top: -8%;
+}
+
+.name{
+    font-size: 20px;
+    margin-top: 12%;
+    margin-left: 19%;
+}
+
+.mail {
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+#email {
+    margin-left: 35px;
+    width: 300px;
+}
+
+#password {
+    width: 300px;
+}
+#confirmpassword{
+    width: 300px;
+}
+
+.cpw{
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+.pw {
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+.submit {
+    width: 14%;
+    margin-top: 2%;
+    margin-left: 35%;
+}
+
+.megaphone {
+    margin-left: 85%;
+    margin-top: -1%;
+    width: 150px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.garisvertikal {
+    margin-top: 6%;
+    border-bottom: 4px solid;
+}
+
+.aspiration {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 12%;
+}
+
+.of {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 52%;
+}
+
+.people {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 40%;
+
+}
