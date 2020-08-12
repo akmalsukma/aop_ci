@@ -131,14 +131,14 @@
                 <p class="title1">Sign In</p>
                 <p class="manfaat">A Place where your aspirations are heard</p>
             </center>    
-            <form action="" method="post">
+            <form action="<?php echo site_url('Controller/check_signin');?>" method="post">
                 <div class="form-group mail">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" name="Email">
                 </div>
                 <div class="form-group pw">
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" name="pw">
                     <img src="eye.png" alt="" style="width: 30px;">
                 </div>
                 <button type="submit" class="btn btn-danger submit">Sign In</button>
