@@ -69,6 +69,8 @@
     background-color: #ff6107
 }
 
+
+
     </style>
 </head>
 
@@ -88,7 +90,26 @@
             </div>
 
             <div class="col-md-3">
-                <a class="btn btn-dark login" href="<?php echo site_url('Controller/login');?>">Sign In</a>
+            <?php 
+                    if ($this->session->userdata('Status') != "Online") {
+
+                        ?>
+                        <a class='btn btn-dark login' href='<?php echo site_url("Controller/login");?>'>Sign In</a>
+                       
+                        <?php 
+                    }
+
+                    else {
+                        ?>
+                         <a class='btn btn-dark login' href="<?php echo site_url('Controller/logout');?>">Log out</a>";
+
+
+
+                    <?php 
+                    }
+
+            ?>
+                
             </div>
 
         </div>

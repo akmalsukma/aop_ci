@@ -11,7 +11,7 @@ body {
     width: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .col-md-3 {
@@ -23,7 +23,7 @@ body {
     margin-top: 20%;
     text-align: left;
     font-size: 55px;
-    margin-bottom: 87%;
+    /* height: 569px; */
 }
 
 .signin {
@@ -107,8 +107,8 @@ body {
 
 }
 .guy{
-    margin-left:868px;
-    margin-top: -68px;
+    margin-left:1010px;
+    margin-top: -208px;
     }
 
 .garisvertikal {
@@ -135,6 +135,7 @@ body {
 </head>
 
 <body>
+<div class="container-fluid">
 <div class="row">
         <div class="col-md-3" style="border-bottom: 4px solid;"></div>
         <div class="col-md-9 garisvertikal">
@@ -155,78 +156,45 @@ body {
             <form action="<?php echo site_url('Controller/simpan_data');?>" method="post">
             <div class="form-group nik">
                     <label for="exampleInputEmail1">NIK</label>
-                    <input type="text" id="form_nik" name="Nik">
+                    <input type="text" id="form_nik" name="Nik" value="<?php echo set_value('Nik');?>">
+                    <?php echo form_error('Nik' , '<small class="text-danger">', '</small>');?>
                 </div>
                 <div class="form-group name">
                     <label for="exampleInputEmail1">Username</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" value="<?php echo set_value('name')?>">
+                    <?php echo form_error('name' , '<small class="text-danger">', '</small>');?>
                 </div>
                 <div class="form-group nohp">
                     <label for="exampleInputEmail1">Handphone</label>
-                    <input type="number" id="nohp" name="nohp">
+                    <input type="number" id="nohp" name="nohp" value="<?php echo set_value('nohp')?>">
+                    <?php echo form_error('nohp' , '<small class="text-danger">', '</small>');?>
                 </div>
                 <div class="form-group mail">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" id="form_email" name="Email">
+                    <input type="email" id="form_email" name="Email" value="<?php echo set_value('Email')?>">
+                    <?php echo form_error('Email' , '<small class="text-danger">', '</small>');?>
                 </div>
                 <div class="form-group pw">
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" id="form_password" name="pw">
-                    <img src="<?php echo base_url('asset/img/eye.png');?>" alt="" style="width: 30px;">
+                    <?php echo form_error('pw' , '<small class="text-danger">', '</small>');?>
+                    
                 </div>
                 <button type="submit" class="btn btn-danger submit">Sign Up</button>
 
             </form>
 
-<table class="table table-dark">
-  <thead>
-    <tr>
-      <th scope="col">No</th>
-      <th scope="col">NIK</th>
-      <th scope="col">Username</th>
-      <th scope="col">Email</th>
-      <th scope="col">No HP</th>
-      <th scope="col">Password</th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php 
-        if ($c_masyarakat>0) {
-            foreach ($masyarakat as $data) {
-                ?>
-                <tr>
-                <td>1</td>
-                <td><?php echo $data ->nik ?></td>
-                <td><?php echo $data ->username ?></td>
-                <td><?php echo $data ->email ?></td>
-                <td><?php echo $data ->no_hp ?></td>
-                <td><?php echo $data ->password ?></td>
-                </tr>
 
-                <?php
-            }      
-        }
-        else{
-
-            ?>
-            <tr>
-            <td><center>Data Kosong</center></td>
-            </tr>
-            <?php
-        }
-        ?>
-    </tr>
-  </tbody>
-</table>
 
 
             
-            <!-- <img src="php echo base_url('asset/img/megaphone.png');?>" alt="" class="megaphone">
-            <img src="php echo base_url('asset/img/noun_rebellion_2409626-removebg-preview.png');?>" alt="" class="guy"> -->
+            <img src="<?php echo base_url('asset/img/megaphone.png');?>" alt="" class="megaphone">
+            <img src="<?php echo base_url('asset/img/noun_rebellion_2409626-removebg-preview.png');?>" alt="" class="guy">
         </div>
 
 
 
+    </div>
     </div>
 </body>
 

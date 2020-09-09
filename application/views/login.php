@@ -10,7 +10,7 @@
         body {
         width: 100%;
         position: absolute;
-        overflow: hidden;
+        /* overflow: hidden; */
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
     .divaop{
@@ -27,7 +27,7 @@
     margin-top: 20%;
     text-align: left;
     font-size: 55px;
-    margin-bottom: 87%;
+    height: 569px;
     }
 
     .signin {
@@ -54,7 +54,7 @@
 
     .mail {
     font-size: 20px;
-    margin-top: 8%;
+    margin-top: 0%;
     margin-left: 25%;
     }
 
@@ -81,14 +81,14 @@
     }
 
     .megaphone {
-    margin-top: 5%;
+    margin-top: 7%;
     width: 150px;
     /* -webkit-transform: scaleX(-1);
     transform: scaleX(-1); */
     }
     .guy{
-    margin-left:868px;
-    margin-top: 22px;
+        margin-top: 6%;
+        margin-left: 75%;
     }
 
     .garisvertikal {
@@ -115,6 +115,7 @@
 </head>
 
 <body>
+<div class="container-fluid">
 <div class="row">
         <div class="col-md-3" style="border-bottom: 4px solid;"></div>
         <div class="col-md-9 garisvertikal">
@@ -130,16 +131,18 @@
             <center class="title">
                 <p class="title1">Sign In</p>
                 <p class="manfaat">A Place where your aspirations are heard</p>
+                <?php echo $this->session->flashdata('message');?>
             </center>    
             <form action="<?php echo site_url('Controller/check_signin');?>" method="post">
                 <div class="form-group mail">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" id="email" name="Email">
+                    <input type="email" id="email" name="Email" value="<?php echo set_value('Email')?>">
+                    <?php echo form_error('Email' , '<small class="text-danger">', '</small>');?>
                 </div>
                 <div class="form-group pw">
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" id="password" name="pw">
-                    <img src="eye.png" alt="" style="width: 30px;">
+                    <?php echo form_error('pw' , '<small class="text-danger">', '</small>');?>
                 </div>
                 <button type="submit" class="btn btn-danger submit">Sign In</button>
 
@@ -151,7 +154,8 @@
 
 
     </div>
-
+    
+    </div>
 </body>
 
 </html>
